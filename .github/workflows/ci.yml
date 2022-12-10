@@ -9,9 +9,9 @@ jobs:
       - name: add path
         run: echo "/path/to/dir" >> $GITHUB_PATH
       - name: Set selected color
-        run: echo '::set-env name=SELECTED_COLOR::green'
+        run: echo "selected_color=green" >> $GITHUB_ENV
       - name: Get color
-        run: echo 'The selected color is' $SELECTED_COLOR
+        run: echo 'The selected color is' $selected_color
       - name: Checkout
         uses: actions/checkout@v2.0.0
 #      - name: npm update
