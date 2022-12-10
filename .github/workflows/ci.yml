@@ -17,7 +17,7 @@ jobs:
 #      - name: npm update
 #        run: npm install @actions/core@1.2.6
       - name: SetNode.js12.x
-        uses: actions/setup-node@v1.3.0
+        uses: actions/setup-node@v1
         with:
           node-version: 12.x
       - name: Install dependencies
