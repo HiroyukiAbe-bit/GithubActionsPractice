@@ -10,8 +10,8 @@ jobs:
         uses: actions/checkout@v2.0.0
       - name: SetNode.js12.x
         uses: actions/setupnode@v1.3.0
-        with:
-          node-version: 12.x
+#        with:
+#          node-version: 12.x
       - name: Install dependencies
         run: npm ci
       - name: Test
