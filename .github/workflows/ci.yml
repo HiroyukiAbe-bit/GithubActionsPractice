@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
+      - name: npm update
+        run: npm install @actions/core@1.2.6
       - name: SetNode.js12.x
         uses: actions/setup-node@v1.3.0
         with:
