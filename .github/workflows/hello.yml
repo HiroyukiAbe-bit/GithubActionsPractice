@@ -1,0 +1,17 @@
+# ワークフローの名前
+name: Hello, World!
+
+# on = イベント制御、この場合はpush時に動くという設定になる
+on: push
+
+# ジョブの定義
+jobs:
+  # ジョブのキー(任意名)
+  build:
+    # ジョブ名
+    name: Greeting
+    # ジョブが実行される仮想環境
+    runs-on: ubuntu-latest
+    # ジョブ内で実行される処理
+    steps:
+      - run: echo "Hello World!"
