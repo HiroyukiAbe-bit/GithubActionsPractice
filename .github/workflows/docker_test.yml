@@ -1,0 +1,10 @@
+name: Docker Exec Test
+on: push
+
+jobs:
+  DockerAlpineExec:
+    name: Docker Alpine Exec
+    runs-on: ubuntu-latest
+    steps:
+      - name: docker image get
+        uses: docker://alpine:3.11
