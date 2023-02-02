@@ -13,3 +13,9 @@ jobs:
         uses: docker://gcr.io/cloud-builders/gcloud
         with:
           args: version
+
+      - name: docker Entory Point Test
+        uses: docker:alpine:3.11
+        with:
+          entrypoint: /bin/echo
+          args: Hello, World! # argsはコンテナアクション実行時にENTRYPOINT　に渡される引数
