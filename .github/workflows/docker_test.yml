@@ -8,3 +8,8 @@ jobs:
     steps:
       - name: docker image get
         uses: docker://alpine:3.11
+
+      - name: docker gcloud image
+        uses: docker://gcr.io/cloud-builders/gcloud
+        with:
+          args: version
