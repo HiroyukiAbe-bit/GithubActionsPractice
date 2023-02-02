@@ -15,7 +15,7 @@ jobs:
           args: version
 
       - name: docker Entory Point Test
-        uses: docker:alpine:3.11
+        uses: docker://alpine:3.11
         with:
           entrypoint: /bin/echo
           args: Hello, World! # argsはコンテナアクション実行時にENTRYPOINT　に渡される引数
